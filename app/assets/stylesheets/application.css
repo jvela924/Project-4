@@ -1,15 +1,29 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 5px solid black;
+  margin-right: 50px;
+  margin-left: 10px;
+  box-shadow:
+    0 4px 0 0 hsl(0, 0%, 75%)
+}
+
+.title {
+  font-family: 'Bungee', cursive;
+  font-size: 85px;
+  padding-top: 8px;
+  text-shadow: 2px 2px gray;
+  margin-left: 65px;
+}
+
+.title-image {
+  width: 350px;
+  border-radius: 7px;
+  height: 200px;
+  margin-bottom: 18px;
+  margin-left: 250px;
+  margin-right: 150px;
+}
