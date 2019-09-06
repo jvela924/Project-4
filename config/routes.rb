@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+    root 'site#index'
+
     # tip routes
     get '/tips', to: 'tips#index'
     get '/tips/:id', to: 'tips#show'
