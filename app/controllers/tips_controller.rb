@@ -1,4 +1,5 @@
 class TipsController < ApplicationController
+    skip_before_action :verify_authenticity_token
 
     def index
         render json: Tip.all
@@ -9,7 +10,7 @@ class TipsController < ApplicationController
     end
 
     def create
-        render json: Tip.create(params["art"])
+        render json: Tip.create(params["tip"])
     end
 
     def delete
@@ -17,7 +18,7 @@ class TipsController < ApplicationController
     end
 
     def update
-        render json: Tip.update(params["id"], params["art"])
+        render json: Tip.update(params["id"], params["tip"])
     end
 
 end
