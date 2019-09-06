@@ -1,24 +1,9 @@
-# README
+# BetShare
+App for sharing betting tips and "Best bets" amongst amateur and professional bettors. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Wireframes
+#### Homepage
+![Homepage](https://github.com/jvela924/Project-4/blob/master/app/assets/images/Screen%20Shot%202019-09-05%20at%208.22.23%20PM.png)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Bet When Clicked
+![BetClicked](https://github.com/jvela924/Project-4/blob/master/app/assets/images/Screen%20Shot%202019-09-05%20at%208.23.36%20PM.png)
