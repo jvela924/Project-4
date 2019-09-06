@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+    # tip routes
+    get '/tips', to: 'tips#index'
+    get '/tips/:id', to: 'tips#show'
+    post '/tips', to: 'tips#create'
+    delete '/tips/:id', to: 'tips#delete'
+    put '/tips/:id', to: 'tips#update'
+
 end
