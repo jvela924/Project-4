@@ -14,7 +14,6 @@
 .title {
   font-family: 'Bungee', cursive;
   font-size: 85px;
-  padding-top: 8px;
   text-shadow: 2px 2px gray;
   margin-left: 65px;
 }
@@ -22,8 +21,25 @@
 .title-image {
   width: 350px;
   border-radius: 7px;
-  height: 200px;
-  margin-bottom: 18px;
+  height: 230px;
   margin-left: 250px;
   margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.header-button {
+  font-size: 20px;
+  margin-left: 40px;
+  border-radius: 15px;
+  color: #3776AE;
+  background-color: white;
+  width: 200px;
+  border: 1px solid black;
 }
