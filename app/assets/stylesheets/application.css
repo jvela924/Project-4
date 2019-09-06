@@ -37,13 +37,14 @@
 
 .header-button {
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 60px;
   border-radius: 15px;
   color: #3776AE;
   background-color: white;
   width: 200px;
-  border: 1px solid black;
+  border: 2px solid gray;
   font-weight: bold;
+  padding: 5px;
 }
 
 .main-container {
