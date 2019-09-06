@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
 
 .header {
   display: flex;
@@ -42,4 +43,47 @@
   background-color: white;
   width: 200px;
   border: 1px solid black;
+  font-weight: bold;
+}
+
+.main-container {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 100%;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Monda', sans-serif;
+  margin-left: 50px;
+}
+
+.tip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  width: 80%;
+}
+
+.tip-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
