@@ -1,10 +1,12 @@
 import React from 'react'
 
+import Header from './Header.js'
+
 class App extends React.Component {
   render () {
     return (
       <div>
-        <h1>BetShare</h1>
+        <Header />
       </div>
     )
   }
