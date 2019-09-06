@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
 
 .header {
   display: flex;
@@ -14,7 +15,6 @@
 .title {
   font-family: 'Bungee', cursive;
   font-size: 85px;
-  padding-top: 8px;
   text-shadow: 2px 2px gray;
   margin-left: 65px;
 }
@@ -22,8 +22,69 @@
 .title-image {
   width: 350px;
   border-radius: 7px;
-  height: 200px;
-  margin-bottom: 18px;
+  height: 230px;
   margin-left: 250px;
   margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.header-button {
+  font-size: 20px;
+  margin-left: 60px;
+  border-radius: 15px;
+  color: #3776AE;
+  background-color: white;
+  width: 200px;
+  border: 2px solid gray;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.main-container {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 100%;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Monda', sans-serif;
+  margin-left: 50px;
+}
+
+.tip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  width: 80%;
+}
+
+.tip-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
