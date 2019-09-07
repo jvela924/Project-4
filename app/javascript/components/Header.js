@@ -10,7 +10,7 @@ class Header extends React.Component {
           </h1>
           <div className="header-flex">
             <button className="header-button">Home</button>
-            <button className="header-button">Share Your Bet</button>
+            <button className="header-button">Share Your Bets</button>
           </div>
         </div>
         <div>
