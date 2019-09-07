@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from './Header.js'
 import Main from './Main.js'
+import Score from './Score.js'
 
 class App extends React.Component {
   render () {
@@ -12,6 +13,9 @@ class App extends React.Component {
         </div>
         <div className="main-container">
           <Main />
+        </div>
+        <div>
+          <Score />
         </div>
       </div>
     )
