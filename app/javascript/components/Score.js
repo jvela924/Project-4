@@ -53,7 +53,7 @@ class Score extends React.Component {
     return (
       <div className="score">
         <hr/>
-        <h1>NFL Games</h1>
+        <h1 className="score-title">NFL Scores</h1>
         {
             (this.state.nflScores)
             ? <GameList events={this.state.nflScores.events} />
@@ -61,7 +61,7 @@ class Score extends React.Component {
         }
 
         <hr/>
-        <h1>MLB Games</h1>
+        <h1 className="score-title">MLB Scores</h1>
         {
             (this.state.mlbScores)
             ? <GameList events={this.state.mlbScores.events} />

@@ -76,6 +76,15 @@ h2 {
   margin-left: 50px;
 }
 
+h3 {
+  font-family: "Helvetica Neue";
+}
+
+h4 {
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+}
+
 .tip {
   display: flex;
   flex-direction: row;
@@ -141,4 +150,12 @@ table {
 
 .score {
   background-color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.score-title {
+  font-family: 'Bungee', cursive;
 }
