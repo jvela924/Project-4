@@ -44,7 +44,7 @@ Tip.create({
     "spread" => -17.5,
     "odds" => +110,
     "wager" => 25.00,
-    "rationale" => "Etienne will run wild on A & M's defense"
+    "rationale" => "Etienne will run wild on A & Ms defense"
 })
 Tip.create({
     "person" => "Noe Stradamus",
@@ -74,7 +74,7 @@ Tip.create({
     "spread" => +1,
     "odds" => -150,
     "wager" => 100.00,
-    "rationale" => "I'm Pickle Rick!"
+    "rationale" => "Im Pickle Rick!"
 })
 Tip.create({
     "person" => "Nehi",
@@ -94,7 +94,7 @@ Tip.create({
     "spread" => +7,
     "odds" => +140,
     "wager" => 10000.00,
-    "rationale" => "Hard knocks don't stop"
+    "rationale" => "Hard knocks dont stop"
 })
 Tip.create({
     "person" => "Wyld Stallyns",

@@ -26,8 +26,8 @@ class Main extends React.Component {
         <tr>
           <th>User</th>
           <th>Bet on</th>
-          <th>Spread</th>
-          <th>Amount Wagered</th>
+          <th className="spread">Spread</th>
+          <th className="spread">Amount Wagered</th>
         </tr>
         {this.state.tips.map ((tip, index) => {
           return(

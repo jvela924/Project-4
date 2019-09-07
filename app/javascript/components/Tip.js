@@ -5,10 +5,10 @@ class Tip extends React.Component {
     return (
       <React.Fragment>
       <tr>
-        <td>{this.props.tip.person}</td>
-        <td>{this.props.tip.sidebet}</td>
-        <td>{this.props.tip.spread}</td>
-        <td>${this.props.tip.wager}</td>
+        <td className="sidebet">{this.props.tip.person}</td>
+        <td className="sidebet">{this.props.tip.sidebet}</td>
+        <td className="spread">{this.props.tip.spread}</td>
+        <td className="spread">${this.props.tip.wager}</td>
         <button className="tip-button">See More</button>
         <button className="tip-button">Edit</button>
         <button className="tip-button">Delete</button>
