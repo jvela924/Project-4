@@ -39,10 +39,10 @@ class Main extends React.Component {
         return { tips: prevState.tips }
       })
     })
-    .catch(err => console.log(err))
+    .catch(err => alert("Must fill out all form fields"))
   }
   handleUpdate = (updateData) => {
-    fetch('/tips/${updateData.id}', {
+    fetch(`/tips/${updateData.id}`, {
       body: JSON.stringify(updateDate),
       method: 'PUT',
       headers: {
@@ -57,7 +57,7 @@ class Main extends React.Component {
     .catch(err => console.log(err))
   }
   handleDelete = (id) => {
-    fetch('/tips/${id}', {
+    fetch(`/tips/${id}`, {
       method: 'DELETE',
       headers: {
         'Accept': 'application/json, text/plain, */*',
