@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Tip from './Tip.js'
+import Form from './Form.js'
 
 class Main extends React.Component {
   constructor (props) {
@@ -21,7 +22,7 @@ class Main extends React.Component {
   }
   handleCreate = (createData) => {
     fetch('/tips', {
-      body: JSON.stringify(createDate),
+      body: JSON.stringify(createData),
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -74,6 +75,8 @@ class Main extends React.Component {
   render () {
     return (
       <div className = "main">
+      {this.props.view.page === 'home'
+      ?
       <table>
       <tr>
         <th>User</th>
@@ -82,18 +85,23 @@ class Main extends React.Component {
         <th className="spread">Amount Wagered</th>
         <th className="small"></th>
       </tr>
-        {this.state.tips.map ((tip, index) => {
-          return(
+        {this.state.tips.map ((tip) => (
             <Tip
+              key={tip.id}
               tip={tip}
-              key={index}
               handleView={this.props.handleView}
               handleDelete={this.handleDelete}
             />
-         )
-       })}
-      </table>
-      </div>
+    ))}
+    </table>
+    : <Form
+      handleCreate={this.handleCreate}
+      handleUpdate={this.handleUpdate}
+      formInputs={this.props.formInputs}
+      view={this.props.view}
+      />
+    }
+    </div>
     )
   }
 }
