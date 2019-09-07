@@ -23,9 +23,10 @@
   width: 350px;
   border-radius: 7px;
   height: 230px;
-  margin-left: 250px;
+  margin-left: 300px;
   margin-right: 150px;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .header-flex {
@@ -63,8 +64,8 @@
 
 .tips {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   flex-basis: 100%;
 }
 
@@ -87,4 +88,41 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+th {
+  width: 20%;
+  border-bottom: 1px solid silver;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow:
+    0 1px 0 0 hsl(0, 0%, 75%);
+  font-family: 'Bungee', cursive;
+}
+
+td {
+  width: 20%;
+  text-align: center;
+  font-size: 17px;
+}
+
+table {
+  width: 100%;
+}
+
+hr {
+  width: 500px;
+}
+
+th {
+  overflow-y: scroll;
+}
+
+.tip-button {
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin-right: 10px;
 }
