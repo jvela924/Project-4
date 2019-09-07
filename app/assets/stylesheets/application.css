@@ -159,3 +159,61 @@ table {
 .score-title {
   font-family: 'Bungee', cursive;
 }
+
+label {
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+input {
+  font-size: 18px;
+  width: 100%;
+  margin-left: 20px;
+  border: 1px solid #544E4E;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+form {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 15px;
+  width: 90%;
+}
+
+.form-flex {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  width: 75%;
+}
+
+.form-title {
+  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.form {
+  width: 100%;
+  padding: 15px;
+}
+
+.submit {
+  background-color: #00C427;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 500px;
+  margin-left: 25%;
+}
+
+.form-div {
+  width: 200px;
+  margin-left: 100px;
+}

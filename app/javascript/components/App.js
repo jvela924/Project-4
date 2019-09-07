@@ -59,7 +59,7 @@ class App extends React.Component {
                 formInputs = {
                     id: tipData.id,
                     person: tipData.person,
-                    sidebet: tipData.sideBet,
+                    sidebet: tipData.sidebet,
                     opponent: tipData.opponent,
                     hometeam: tipData.hometeam,
                     spread: tipData.spread,
@@ -87,10 +87,14 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <Header />
+          <Header handleView={this.handleView} />
         </div>
         <div className="main-container">
-          <Main />
+          <Main
+          view={this.state.view}
+          formInputs={this.state.formInputs}
+          handleView={this.handleView}
+           />
           <Score />
         </div>
       </div>
