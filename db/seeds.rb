@@ -11,7 +11,7 @@ Tip.create({
     "sidebet" => "Washington Generals",
     "opponent" => "Harlem Globetrotters",
     "hometeam" => "Harlem Globetrotters",
-    "spread" => 10.5,
+    "spread" => -10.5,
     "odds" => -110,
     "wager" => 5.00,
     "rationale" => "Nice uniforms"
@@ -21,7 +21,7 @@ Tip.create({
     "sidebet" => "New England Patriots",
     "opponent" => "Los Angeles Rams",
     "hometeam" => "New England Patriots",
-    "spread" => 7,
+    "spread" => -7,
     "odds" => +140,
     "wager" => 10000.00,
     "rationale" => "Gronk!"
