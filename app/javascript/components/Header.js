@@ -9,8 +9,8 @@ class Header extends React.Component {
           BetShare
           </h1>
           <div className="header-flex">
-            <button className="header-button">Home</button>
-            <button className="header-button">Share Your Bet</button>
+            <button className="header-button" onClick={() => {this.props.handleView('home')}}>Home</button>
+            <button onClick={() => {this.props.handleView('addTip')}} className="header-button">Share Your Bets</button>
           </div>
         </div>
         <div>

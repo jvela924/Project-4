@@ -23,9 +23,10 @@
   width: 350px;
   border-radius: 7px;
   height: 230px;
-  margin-left: 250px;
+  margin-left: 300px;
   margin-right: 150px;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .header-flex {
@@ -49,6 +50,7 @@
 
 .main-container {
   display: flex;
+  flex-direction: row;
   margin-top: 50px;
   margin-right: 50px;
   margin-left: 10px;
@@ -63,8 +65,8 @@
 
 .tips {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   flex-basis: 100%;
 }
 
@@ -72,6 +74,15 @@ h2 {
   font-size: 18px;
   font-family: 'Monda', sans-serif;
   margin-left: 50px;
+}
+
+h3 {
+  font-family: "Helvetica Neue";
+}
+
+h4 {
+  font-family: "Helvetica Neue";
+  font-size: 13px;
 }
 
 .tip {
@@ -87,4 +98,122 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+th {
+  width: 20%;
+  border-bottom: 1px solid silver;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow:
+    0 1px 0 0 hsl(0, 0%, 75%);
+  font-family: 'Bungee', cursive;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+
+}
+
+td {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+.tip-button {
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.sidebet {
+  width: 23%;
+}
+
+.spread {
+  width: 13%;
+}
+
+.small {
+  width: 20%;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.score {
+  background-color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.score-title {
+  font-family: 'Bungee', cursive;
+}
+
+label {
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+input {
+  font-size: 18px;
+  width: 100%;
+  margin-left: 20px;
+  border: 1px solid #544E4E;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+form {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 15px;
+  width: 90%;
+}
+
+.form-flex {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  width: 75%;
+}
+
+.form-title {
+  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.form {
+  width: 100%;
+  padding: 15px;
+}
+
+.submit {
+  background-color: #00C427;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 500px;
+  margin-left: 25%;
+}
+
+.form-div {
+  width: 200px;
+  margin-left: 100px;
 }
