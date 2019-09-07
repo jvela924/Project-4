@@ -23,18 +23,19 @@ class Main extends React.Component {
     return (
       <div className = "main">
       <table>
-        <tr>
-          <th>User</th>
-          <th>Bet on</th>
-          <th className="spread">Spread</th>
-          <th className="spread">Amount Wagered</th>
-        </tr>
+      <tr>
+        <th>User</th>
+        <th>Bet on</th>
+        <th className="spread">Spread</th>
+        <th className="spread">Amount Wagered</th>
+        <th className="small"></th>
+      </tr>
         {this.state.tips.map ((tip, index) => {
           return(
             <Tip tip={tip} key={index} />
          )
        })}
-        </table>
+      </table>
       </div>
     )
   }
