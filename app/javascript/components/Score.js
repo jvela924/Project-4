@@ -5,8 +5,8 @@ class Score extends React.Component {
     constructor(props){
         super(props)
         this.state={
-            nflURL: 'http://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard',
-            mlbURL: 'http://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard'
+            nflURL: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard',
+            mlbURL: 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard'
         }
         this.fetchNFLScores = this.fetchNFLScores.bind(this)
         this.fetchMLBScores = this.fetchMLBScores.bind(this)
