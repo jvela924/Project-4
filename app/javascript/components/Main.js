@@ -35,7 +35,7 @@ class Main extends React.Component {
     .then(jsonedTip => {
       this.props.handleView('home')
       this.setState(prevState => {
-        prevState.tips.push(jsonedTip)
+        prevState.tips.unshift(jsonedTip)
         return { tips: prevState.tips }
       })
     })
