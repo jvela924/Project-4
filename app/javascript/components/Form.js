@@ -60,13 +60,13 @@ class Form extends React.Component {
             <div className="form-div">
               <label>
               Spread:
-              <input type="number" id="spread" value={this.state.spread} onChange={this.handleChange} />
+              <input type="number" step="0.5" id="spread" value={this.state.spread} onChange={this.handleChange} />
               </label>
             </div>
             <div className="form-div">
               <label>
               Amount Wagered:
-              <input type="number" id="wager" value={this.state.wager} onChange={this.handleChange} />
+              <input type="number" step="0.01" id="wager" value={this.state.wager} onChange={this.handleChange} />
               </label>
             </div>
             <div className="form-div">

@@ -43,7 +43,7 @@ class Main extends React.Component {
   }
   handleUpdate = (updateData) => {
     fetch(`/tips/${updateData.id}`, {
-      body: JSON.stringify(updateDate),
+      body: JSON.stringify(updateData),
       method: 'PUT',
       headers: {
         'Accept': 'application/json, text/plain, */*',
