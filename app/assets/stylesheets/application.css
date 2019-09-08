@@ -4,7 +4,7 @@
 .header {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   border-bottom: 5px solid black;
   margin-right: 50px;
   margin-left: 10px;
@@ -23,7 +23,7 @@
   width: 350px;
   border-radius: 7px;
   height: 230px;
-  margin-left: 300px;
+  margin-left: 200px;
   margin-right: 150px;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -216,4 +216,18 @@ form {
 .form-div {
   width: 200px;
   margin-left: 100px;
+}
+
+.sport-btn-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.sport-btn {
+    border: 1px solid black;
+    font-weight: 900;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
