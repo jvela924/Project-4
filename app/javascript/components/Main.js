@@ -2,6 +2,7 @@ import React from 'react'
 
 import Tip from './Tip.js'
 import Form from './Form.js'
+import More from './More.js'
 
 class Main extends React.Component {
   constructor (props) {
@@ -35,7 +36,7 @@ class Main extends React.Component {
     .then(jsonedTip => {
       this.props.handleView('home')
       this.setState(prevState => {
-        prevState.tips.push(jsonedTip)
+        prevState.tips.unshift(jsonedTip)
         return { tips: prevState.tips }
       })
     })
@@ -43,7 +44,7 @@ class Main extends React.Component {
   }
   handleUpdate = (updateData) => {
     fetch(`/tips/${updateData.id}`, {
-      body: JSON.stringify(updateDate),
+      body: JSON.stringify(updateData),
       method: 'PUT',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -91,16 +92,17 @@ class Main extends React.Component {
               tip={tip}
               handleView={this.props.handleView}
               handleDelete={this.handleDelete}
+              handleShow={this.handleShow}
             />
     ))}
     </table>
-    : <Form
+    : this.props.view.page === 'editTip' || this.props.view.page === 'addTip' ? <Form
       handleCreate={this.handleCreate}
       handleUpdate={this.handleUpdate}
       formInputs={this.props.formInputs}
       view={this.props.view}
       />
-    }
+      : <More formInputs={this.props.formInputs} view={this.props.view} />}
     </div>
     )
   }
