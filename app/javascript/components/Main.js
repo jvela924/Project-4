@@ -52,9 +52,12 @@ class Main extends React.Component {
       }
     })
     .then(updatedTip => {
-      this.props.handleView('home')
-      this.fetchTips()
-    })
+         this.setState(prevState => {
+           prevState.tips.unshift(updatedTip)
+           this.props.handleView('home')
+           this.fetchTips()
+       })
+     })
     .catch(err => console.log(err))
   }
   handleDelete = (id) => {
