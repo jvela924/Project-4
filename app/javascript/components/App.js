@@ -50,6 +50,17 @@ class App extends React.Component {
                 break
             case 'seeMore':
                 pageTitle = 'Bet Detail'
+                formInputs = {
+                    id: tipData.id,
+                    person: tipData.person,
+                    sidebet: tipData.sidebet,
+                    opponent: tipData.opponent,
+                    hometeam: tipData.hometeam,
+                    spread: tipData.spread,
+                    odds: tipData.odds,
+                    wager: tipData.wager,
+                    rationale: tipData.rationale
+                }
                 break
             case 'addTip':
                 pageTitle = 'Add a Bet'

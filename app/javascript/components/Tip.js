@@ -9,7 +9,7 @@ class Tip extends React.Component {
         <td className="sidebet">{this.props.tip.sidebet}</td>
         <td className="spread">{this.props.tip.spread}</td>
         <td className="spread">${this.props.tip.wager}</td>
-        <button className="tip-button">See More</button>
+        <button onClick={() => {this.props.handleView('seeMore', this.props.tip)}} className="tip-button">See More</button>
         <button onClick={() => {this.props.handleView('editTip', this.props.tip)}} className="tip-button">Edit</button>
         <button onClick={() => {this.props.handleDelete(this.props.tip.id)}} className="tip-button">Delete</button>
       </tr>

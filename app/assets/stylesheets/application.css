@@ -191,12 +191,30 @@ form {
   width: 90%;
 }
 
+.details {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 15px;
+  width: 90%;
+  height: 450px;
+  margin-bottom: -300px;
+  margin-top: 14px;
+}
+
 .form-flex {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
   width: 75%;
+}
+
+.detail-flex {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
 }
 
 .form-title {
@@ -223,6 +241,11 @@ form {
   margin-left: 100px;
 }
 
+.detail-div {
+  width: 200px;
+  margin-left: 30px;
+}
+
 .sport-btn-container {
     display: flex;
     flex-flow: row wrap;
@@ -237,6 +260,12 @@ form {
     border-radius: 5px;
 }
 
+.tip-detail {
+  margin-left: 20px;
+  font-size: 20px;
+  width: 200px;
+}
+
 @media (max-width: 1000px) {
   .main-container {
     display: flex;
@@ -246,7 +275,27 @@ form {
     margin-left: 10px;
   }
 
+  .details {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 15px;
+    width: 90%;
+    height: 700px;
+    margin-bottom: -300px;
+  }
+
   .main {
     width: 107%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .details {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 15px;
+    width: 90%;
+    height: 700px;
+    margin-bottom: -300px;
   }
 }
