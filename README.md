@@ -39,5 +39,12 @@ We used PostgreSQL as our database. It is a relational database management syste
 
 4. I, as a user, will be able to delete betting tips.
 
-## Live Scoring
+## Live Scoring and ESPN API
+We used a free endpoint from ESPN to pull in live scores for NFL, MLB, and NCAA Football games. Every time a user reloads the page, they'll see the score and status of the game (i.e. what quarter or inning the game is in). We added buttons so users can easily toggle betwen scores for different sports. 
+
+#### NFL Scores
+![NFL Scores](https://github.com/jvela924/Project-4/blob/master/app/assets/images/Screen%20Shot%202019-09-08%20at%203.50.49%20PM.png)
+
+#### MLB Scores
+![MLB Scores](https://github.com/jvela924/Project-4/blob/master/app/assets/images/Screen%20Shot%202019-09-08%20at%203.51.01%20PM.png)
 
