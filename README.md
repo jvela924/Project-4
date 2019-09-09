@@ -1,7 +1,17 @@
 # BetShare
 App for sharing betting tips and "Best bets" amongst amateur and professional bettors. 
 
-### Wireframes
+## Technologies Used
+### React
+We used React to build-out our Front-end. React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded.
+
+### Rails
+Rails is a server-side web application framework. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.
+
+### PostgreSQL
+We used PostgreSQL as our database. It is a relational database management system emphasizing extensibility and technical standards compliance.
+
+## Wireframes
 #### Homepage
 ![Homepage](https://github.com/jvela924/Project-4/blob/master/app/assets/images/Screen%20Shot%202019-09-05%20at%208.22.23%20PM.png)
 
@@ -9,7 +19,7 @@ App for sharing betting tips and "Best bets" amongst amateur and professional be
 ![BetClicked](https://github.com/jvela924/Project-4/blob/master/app/assets/images/Screen%20Shot%202019-09-05%20at%208.23.36%20PM.png)
 
 
-# User Stories
+## User Stories
 
 1. I, as a user, will be able to create betting tips that contain the following information: 
 
@@ -28,3 +38,6 @@ App for sharing betting tips and "Best bets" amongst amateur and professional be
 3. I, as a user, will be able to edit betting tips.
 
 4. I, as a user, will be able to delete betting tips.
+
+## Live Scoring
+
